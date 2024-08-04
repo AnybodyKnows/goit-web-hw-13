@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "hw13_fastapi"
+version = "0.1.0"
+description = ""
+authors = ["AnybodyKnows <120731166+AnybodyKnows@users.noreply.github.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+unicorn = {extras = ["standard"], version = "^2.0.1.post1"}
+sqlalchemy = {extras = ["postgresql-asyncpg"], version = "^2.0.31"}
+alembic = "^1.13.2"
+asyncpg = "^0.29.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+pathlib = "^1.0.1"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+libgravatar = "^1.0.4"
+fastapi-mail = "^1.4.1"
+python-dotenv = "^1.0.1"
+redis = "==4.*"
+fastapi-limiter = "^0.1.6"
+jinja2 = "^3.1.4"
+cloudinary = "^1.41.0"
+uvicorn = "^0.30.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
